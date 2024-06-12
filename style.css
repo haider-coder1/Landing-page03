@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#main img{
+    height: 650px;
+    position: relative;
+    z-index: 99;
+    width: 510px;
+    object-fit: cover;
+}
+
+#scrol-div{
+    position: absolute;
+    top: 24%;
+    width: 100%;
+    /* height: 100%; */
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+#scrol-div h1{
+     display: inline-block;
+     font-size: 130px;
+     text-transform: uppercase;
+     margin-right: 30px;
+     letter-spacing: 3px;
+     animation-name: scroll;
+     animation-duration: 1s;
+     animation-timing-function: linear;
+     animation-iteration-count: infinite;
+}
+#scrol-div::-webkit-scrollbar{
+    display: none;
+}
+#scrol-div2{
+    position: absolute;
+    top: 44%;
+    width: 100%;
+    /* height: 100%; */
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    z-index: 100;
+}
+#scrol-div2 h1{
+     display: inline-block;
+     font-size: 130px;
+     text-transform: uppercase;
+     margin-right: 30px;
+     letter-spacing: 3px;
+     -webkit-text-stroke-width:2px ;
+     -webkit-text-stroke-color:#000 ;
+     color: transparent;
+     animation-name: scroll;
+     animation-duration: 1s;
+     animation-timing-function: linear;
+     animation-iteration-count: infinite;
+     
+}
+#scrol-div2::-webkit-scrollbar{
+    display: none;
+}
+#scrol-div3{
+    position: absolute;
+    top: 64%;
+    width: 100%;
+    /* height: 100%; */
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+#scrol-div3 h1{
+     display: inline-block;
+     font-size: 130px;
+     text-transform: uppercase;
+     margin-right: 30px;
+     letter-spacing: 3px;
+     animation-name: scroll;
+     animation-duration: 1s;
+     animation-timing-function: linear;
+     animation-iteration-count: infinite;
+     animation-direction: reverse;
+}
+#scrol-div3::-webkit-scrollbar{
+    display: none;
+}
+#text{
+    font-size: 30px;
+    position: absolute;
+    width: 60%;
+    top: 5%;
+   text-transform: uppercase;
+    z-index: 999;
+    text-align: center;
+}
+@keyframes scroll {
+    from{
+        transform: translateX(calc(-100% - 32px));
+  
+    }
+    to{
+        transform: translateX(0);
+    }
+}
